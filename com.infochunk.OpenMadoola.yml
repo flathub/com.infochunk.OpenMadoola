@@ -16,5 +16,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/nfroggy/openmadoola
-        tag: v1.16
-        commit: 1aa5af3a4cc802623fc521464d49a1e0171828a3
+        tag: v1.18
+        commit: 702cf36c43cf0acf4c1e0727821da5b9d5026e24
