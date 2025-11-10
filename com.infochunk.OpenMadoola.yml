@@ -1,6 +1,6 @@
 id: com.infochunk.OpenMadoola
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: openmadoola_launcher.sh
 finish-args:
@@ -13,8 +13,10 @@ finish-args:
 modules:
   - name: openmadoola
     buildsystem: cmake-ninja
+    config-opts:
+      - -DACTIVE_PLATFORM=SDL3
     sources:
       - type: git
         url: https://github.com/nfroggy/openmadoola
-        tag: v1.20
-        commit: 9f9d5de4aadd75801a1c7e2eb84c7d14b857a6ee
+        tag: v1.22
+        commit: 5175ddcd77ebbbbdec1c2abe8bc1d9cb81b167cd
